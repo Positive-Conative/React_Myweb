@@ -4,7 +4,7 @@ import BigText from '../components/BigText';
 const Post = ({params}) => {
     return (
         <div>
-            <BigText>{params.id}</BigText>
+            <BigText>id : {params.id}</BigText>
         </div>
     );
 };
