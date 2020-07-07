@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Test from './components/test';
-import Header from './components/Header';
+import Header from './components/include/Header';
 
 class App extends React.Component {
   componentDidMount() {

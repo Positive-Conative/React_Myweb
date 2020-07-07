@@ -11,15 +11,17 @@ const MenuItem = ({active, children, to}) => (
 const Header = (props, context) => {
     const { router } = context;
     return (
-        <div>
+        <div className="Hello">
             <div className="logo">
-                velopert
+                Positive - Conative
             </div>
             <div className="menu">
+                <div className="parallelogram"></div>
                 <MenuItem to={'/'} active={router.isActive('/', true)}>홈</MenuItem>
                 <MenuItem to={'/about'} active={router.isActive('/about')}>소개</MenuItem>
                 <MenuItem to={'/post'} active={router.isActive('/post')}>포스트</MenuItem>
             </div>
+            
         </div>
     );
 };
