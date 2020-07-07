@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Test from './components/test';
 
 class App extends React.Component {
   componentDidMount() {
@@ -23,6 +24,7 @@ class App extends React.Component {
         <div className="App">
           <header className="App-header">
             {username ? `Hello ${username}` : 'Hello World'}
+            <Test></Test>
           </header>
         </div>
     );
