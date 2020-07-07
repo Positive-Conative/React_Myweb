@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Test from './components/test';
+import Header from './components/Header';
 
 class App extends React.Component {
   componentDidMount() {
@@ -22,7 +23,9 @@ class App extends React.Component {
     const {username} = this.state;
     return (
         <div className="App">
-          <header className="App-header">
+          <Header/>
+           {this.props.children}
+            <header className="App-header">
             {username ? `Hello ${username}` : 'Hello World'}
             <Test></Test>
           </header>
