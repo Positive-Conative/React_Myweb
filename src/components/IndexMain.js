@@ -13,7 +13,6 @@ class MainVidio extends React.Component{
     render(){
         return(
             <div className="firstSession">
-                
                 <span className="mainTextbar">
                         hello world
                 </span>
