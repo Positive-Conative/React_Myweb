@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Test from './components/test';
 import Header from './components/include/Header';
 
 class App extends React.Component {
@@ -18,17 +17,16 @@ class App extends React.Component {
           username:null
       };
   }
-
+  
   render() {
     const {username} = this.state;
     return (
         <div className="App">
           <Header/>
            {this.props.children}
-            <header className="App-header">
-            {username ? `Hello ${username}` : 'Hello World'}
-            <Test></Test>
-          </header>
+            {/* <header className="App-header">
+              {username ? `Hello ${username}` : 'Hello World'}
+            </header> */}
         </div>
     );
     ;
