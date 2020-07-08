@@ -1,5 +1,5 @@
 /* Desktop */
-body {overflow:hidden}
+body {overflow-x: hidden}
 @media screen and (min-width: 769px) {
     .Hello{
         background-color: #343a40;

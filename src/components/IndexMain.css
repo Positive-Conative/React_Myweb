@@ -1,0 +1,14 @@
+.firstSession{
+    margin:0 auto;
+}
+
+.indexVideo{
+    width:100%;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.mainTextbar{
+    font-size: 1.5rem;
+    z-index: 2;
+}

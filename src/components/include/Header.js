@@ -21,7 +21,6 @@ const Header = (props, context) => {
                 <MenuItem to={'/about'} active={router.isActive('/about')}>소개</MenuItem>
                 <MenuItem to={'/post'} active={router.isActive('/post')}>포스트</MenuItem>
             </div>
-            
         </div>
     );
 };

@@ -1,10 +1,10 @@
 import React from 'react';
-import BigText from '../components/BigText';
+import IndexMain from '../components/IndexMain';
 
 const Home = () => {
     return (
         <div>
-            <BigText>홈</BigText>
+            <IndexMain></IndexMain>
         </div>
     );
 };
