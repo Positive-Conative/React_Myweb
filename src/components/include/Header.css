@@ -13,7 +13,7 @@ body {
         background-color: #343a40;
         display: flex;
         justify-content: space-between;
-    }    
+    }
     .logo {
         height: 3.5rem;
         line-height: 3.5rem;
@@ -43,7 +43,6 @@ body {
         padding-left : 1rem;
         padding-right : 1rem;
         border-left : 1px white solid;
-        border-right : 1px white solid;
     }
     
     .menu-item:hover {

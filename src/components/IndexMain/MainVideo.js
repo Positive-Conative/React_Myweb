@@ -1,14 +1,7 @@
 import React from 'react';
-import './IndexMain.css';
-import IndexVideo from './videos/IndexVideo.mp4'
-class IndexMain extends React.Component{
-    render(){
-        return(
-            <MainVidio></MainVidio>
-        );
-    }
-}
-class MainVidio extends React.Component{
+import IndexVideo from '../videos/IndexVideo.mp4'
+
+class MainVideo extends React.Component{
     render(){
         return(
             <div className="firstSession">
@@ -27,4 +20,4 @@ class MainVidio extends React.Component{
     }
 }
 
-export default IndexMain;
+export default MainVideo;
