@@ -6,6 +6,12 @@ body {
 ::-webkit-scrollbar {
     display:none;
 }
+a:hover { 
+    text-decoration: none; 
+}
+.logo:hover, .menu-item:hover{
+    color:yellow;
+}
 
 /* Desktop */
 @media screen and (min-width: 769px) {

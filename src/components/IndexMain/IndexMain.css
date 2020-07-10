@@ -9,18 +9,18 @@
     filter: blur(10px);
     z-index: 1;
 }
+
 .mainTextbar{
     position:absolute;
     float:left;
     width:100%;
     z-index:2;
     color:white;
+    font-size: 3vw;
 }
 
 @media screen and (min-width: 769px) {
-    
     .mainTextbar{
-        font-size: 2.5rem;
         top:15rem;
     }
     .mainTextbarSmall{
@@ -28,11 +28,9 @@
     }
 }
 
-
 /* mobile */
 @media screen and (max-width: 768px) {
     .mainTextbar{
-        font-size: 1.5rem;
         top:13rem;
     }
     .mainTextbarSmall{

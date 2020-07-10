@@ -1,5 +1,35 @@
 .secondSessionHeader{
     font-family: "Comic Sans MS";
     margin-top: 3rem;
+    margin-bottom: 3rem;
     font-size: 3vw;
-}   
+}
+
+.cardBox{
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardBox .cards{
+    width: 18rem;
+    margin: 5px;
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    .cardBox{
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {    
+    .cardBox{
+        /* flex-direction: column;
+        align-items: center; 가운데정렬
+        justify-content: center; */
+    }
+}
