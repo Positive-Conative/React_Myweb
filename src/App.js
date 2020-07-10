@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/include/Header';
+import Footer from './components/include/Footer';
 
 class App extends React.Component {
   componentDidMount() {
@@ -27,6 +28,7 @@ class App extends React.Component {
             {/* <header className="App-header">
               {username ? `Hello ${username}` : 'Hello World'}
             </header> */}
+            <Footer/>
         </div>
     );
     ;

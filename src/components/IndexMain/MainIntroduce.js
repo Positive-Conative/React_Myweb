@@ -8,7 +8,7 @@ class MainIntroduce extends React.Component{
                 <div className="secondSessionHeader">
                     --- Positive Conative ---
                 </div>
-                <div className="cardBox">dd
+                <div className="cardBox">
                     <Card className="cards">
                         <Card.Header>Header</Card.Header>
                             <Card.Body>

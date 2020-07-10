@@ -2,6 +2,7 @@ import React from 'react';
 import './IndexMain.css';
 import MainVideo from './MainVideo'
 import MainIntroduce from './MainIntroduce'
+
 class IndexMain extends React.Component{
     render(){
         return(

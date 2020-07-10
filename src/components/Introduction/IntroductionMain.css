@@ -1,0 +1,41 @@
+.Title{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.Content{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MyImage{
+    width:15vw;
+}
+
+.Text{
+    padding-left: 4vw;
+    flex-grow: 2;
+    text-align:left;
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    .Title{
+        font-size: 3rem;
+    }
+    .Content{
+        font-size: 1.5rem;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .Title{
+        font-size: 2rem;
+    }
+    .Content{
+        font-size: 1rem;
+    }
+}

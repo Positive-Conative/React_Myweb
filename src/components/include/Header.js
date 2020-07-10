@@ -9,11 +9,10 @@ class Header extends React.Component{
                 <Link to="/" className="logo">
                     Positive - Conative
                 </Link>
-                
                 <div className="menu">
                     <div className="parallelogram"></div>
-                    <Link to="/about" className="menu-item">asdf</Link>
-                    <Link to="/post" className="menu-item">post</Link>
+                    <Link to="/Introduce" className="menu-item">Introduce</Link>
+                    <Link to="/GuestBook" className="menu-item">GuestBook</Link>
                 </div>
             </div>
         );

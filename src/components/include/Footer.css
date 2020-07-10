@@ -1,0 +1,11 @@
+.footerSession{
+    height: 7rem;
+    background-color: #343a40;
+    margin-top: 3rem;
+    color: white;
+    text-align:left;
+    padding : 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
