@@ -1,0 +1,36 @@
+.BODY{
+    padding : 5vw;
+}
+.Title{
+    margin-top: 1vw;
+    margin-bottom: 10px;
+}
+.SubTitle{
+    margin-bottom : 5vw;
+}
+th{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+td{
+    font-size: 1rem;
+
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    .Title{
+        font-size: 3rem;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .Title{
+        margin-top: 5vw;
+        font-size: 2rem;
+    }
+    .SubTitle{
+        font-size: 1rem;
+    }
+}
