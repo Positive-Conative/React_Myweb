@@ -7,7 +7,8 @@ class Footer extends React.Component{
         return (
             <div className="footerSession">
                 Copyright © Kim Young Jae. All rights reserved. <br />
-                Music - Qaayel - Nether (Dub Mix).mp3
+                Music - Qaayel - Nether (Dub Mix).mp3 <br />
+                {/* autoPlay  */}
                 <audio autoplay loop controls> <source src={Music} type="audio/mp3"/> </audio>
             </div>
             

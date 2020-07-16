@@ -8,17 +8,23 @@ import Introduce from './containers/Introduce';
 import GuestBook from './containers/GuestBook';
 import Post from './containers/Post';
 
+//react redux 사용
+import {Provider} from 'react-redux';
+import store from './store'
+
 import './index.css';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="Introduce" component={Introduce}/>
-      <Route path="GuestBook" component={GuestBook}>
-        <Route path=":id" component={Post}/>
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home} />
+        <Route path="Introduce" component={Introduce} />
+        <Route path="GuestBook" component={GuestBook}>
+          <Route path=":id" component={Post} />
+        </Route>
       </Route>
-    </Route>
-  </Router>,
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );

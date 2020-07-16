@@ -1,8 +1,11 @@
 import React from 'react';
 import './GuestBookMain.css';
+import WriteButton from './GuestBookWrite';
 import {Table, ButtonGroup, Button} from 'react-bootstrap';
+import { Link } from 'react-router';
 
 class GuestBookMain extends React.Component{
+    
     render(){
         return(
             <div className="BODY">
@@ -49,13 +52,17 @@ class GuestBookMain extends React.Component{
                     </Table>
                 </div>
                 <div>
-                    <ButtonGroup aria-label="First group">
-                        <Button variant="secondary">1</Button>
-                        <Button variant="secondary">2</Button>
-                        <Button variant="secondary">3</Button>
-                        <Button variant="secondary">4</Button>
+                    <ButtonGroup className="ButtonToolbar">
+                        <Link to="/GuestBook/1"><Button variant="secondary">1</Button></Link>&nbsp;
+                        <Link to="/GuestBook/2"><Button variant="secondary">2</Button></Link>&nbsp;
+                        <Link to="/GuestBook/3"><Button variant="secondary">3</Button></Link>&nbsp;
+                        <Link to="/GuestBook/4"><Button variant="secondary">4</Button></Link>
                     </ButtonGroup>
                 </div>
+                <ButtonGroup className="WriteandDelete">
+                    <Link to="/GuestBook/Write"> <WriteButton></WriteButton> </Link>&nbsp;
+                    <Link to="/GuestBook/del"><Button variant="secondary">삭제</Button></Link>
+                </ButtonGroup>
             </div>
         );
     }
