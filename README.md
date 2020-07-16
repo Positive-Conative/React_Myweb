@@ -1,5 +1,5 @@
 ## React와 Node.js를 이용한 웹 제작
-### `제작일시 : `2020.06.28 ~`
+### `2020.06.28 ~`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
