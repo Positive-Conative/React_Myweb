@@ -7,7 +7,7 @@ function GotoLink(){
 }
 
 class GuestBookTable extends React.Component{
-    render(){
+    render(){ 
         return (
             <div>
                 <div className="Content">
