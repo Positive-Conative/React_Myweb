@@ -24,6 +24,7 @@ ReactDOM.render(
           <Route path=":id" component={Post} />
         </Route>
       </Route>
+      {/* <Route component={NotFound} />  404 err */}
     </Router>
   </Provider>,
   document.getElementById('root')

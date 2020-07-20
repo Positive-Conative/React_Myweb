@@ -1,6 +1,7 @@
 import React from 'react';
 import './GuestBookWrite.css';
 import {Modal, Button, Form} from 'react-bootstrap';
+import { Link } from 'react-router';
 
 function WriteModal() {
     const [show, setShow] = React.useState(false);
@@ -41,9 +42,7 @@ function WriteModal() {
                 </Modal.Body>
           <Modal.Footer>
             <Button variant="primary">작성 완료</Button>
-            <Button variant="secondary" onClick={handleClose}>
-              닫기
-            </Button>
+            <Link to="/GuestBook"><Button variant="secondary" onClick={handleClose}>닫기</Button></Link>
           </Modal.Footer>
         </Modal>
       </>

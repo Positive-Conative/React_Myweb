@@ -1,7 +1,6 @@
 import React from 'react';
 import './MainIntroduce.css';
 import {Card} from 'react-bootstrap';
-import store from '../../store';
 import MainVideo from './MainVideo'
 
 class MainIntroduce extends React.Component {
