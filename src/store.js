@@ -5,7 +5,7 @@ import {createStore} from 'redux';
 export default createStore(function(state, action){
     if(state === undefined){
         //최초 실행
-        return {name:"이름을 입력하지 않았습니다."}
+        return {name:"이름없음"}
     }
     if(action.type === 'NAME'){
         return {...state, name:action.val}
