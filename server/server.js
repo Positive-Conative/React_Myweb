@@ -13,3 +13,11 @@ app.use('/api', route); // app.use('/api', (req, res)=> res.json({username:'Cona
 app.listen(port, ()=>{
     console.log(`express is running on ${port}`);
 })
+var mongoose = require('mongoose');
+var db = mongoose.connection;
+db.on('error', console.error);
+db.once('open', function(){
+    // CONNECTED TO MONGODB SERVER
+    console.log("Connected to mongod server");
+});
+mongoose.connect('mongodb://localhost/save_userdata'); //db이름이구나!

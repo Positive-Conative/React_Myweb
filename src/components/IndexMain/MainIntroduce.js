@@ -4,22 +4,27 @@ import {Card, Modal, Button, Form} from 'react-bootstrap';
 import MainVideo from './MainVideo'
 class MainIntroduce extends React.Component {
     render() {
+        let WriteModalTag;
+        //저장된 값이 있는지 확인, 없다면 Modal 출력
+        if(!this.props.name){
+            WriteModalTag = <WriteModal username={this.state} save_redux={this.props.saveRedux}></WriteModal>;
+        }
+
         return (
             <div>
-                <WriteModal username={this.state} save_redux={this.props.saveRedux}></WriteModal>
+                {WriteModalTag}
                 <MainVideo></MainVideo>
+
                 <div className="secondSession">
                     <div className="secondSessionHeader">
-                        <input type="text" placeholder="who are you?" onChange={function (e) {
-                            this.setState({ name: e.target.value })
-                        }.bind(this)}></input>
-
-                        <input type="button" value="input" onClick={function () {
-                            this.props.saveRedux(this.state.name);
-                        }.bind(this)}></input>
-
-                --- Positive Conative ---
-                </div>
+                    --- Positive Conative ---
+                    </div>
+                    <Button variant="secondary" onClick={function(){
+                        window.localStorage.removeItem('name');
+                        window.location.reload(true);
+                    }} >
+                        이름 값 초기화하기!
+                    </Button>
                     <div className="cardBox">
                         <Card className="cards">
                             <Card.Header>Header</Card.Header>
@@ -87,7 +92,7 @@ class MainIntroduce extends React.Component {
                                 <Form.Group>
                                     <Form.Label>닉네임</Form.Label>
                                     {/* 함수이기때문에 Bind할필요가 없음 */}
-                                    <Form.Control id="name" placeholder="ex) Conative" onChange={
+                                    <Form.Control id="name" placeholder="ex) Conative" onKeyPress={e => { if(e.charCode===13){ e.preventDefault() }}}onChange={
                                         function (e) {
                                         setName(e.target.value);
                                     }}/> <br />
@@ -96,14 +101,14 @@ class MainIntroduce extends React.Component {
                         </Modal.Body>
                   <Modal.Footer>
                     <Button variant="primary" onClick={function () {
-                            console.log("화긴 : ")
-                            console.log(typeof user_name)
                             if(typeof user_name === 'object'){
                                 alert("값을 입력하지 않았습니다.")
                             }else if(typeof user_name === 'string'){
-                                if(window.confirm(user_name + "이(가) 확실합니까?"))
+                                if(window.confirm(user_name + "이(가) 확실합니까?")){
                                     props.save_redux(user_name);
+                                    window.localStorage.setItem('name', user_name);
                                     handleClose();
+                                }
                             }else{
                                 alert("무언가 문제가 발생한 듯 하다.")
                             }

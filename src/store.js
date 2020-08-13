@@ -5,7 +5,12 @@ import {createStore} from 'redux';
 export default createStore(function(state, action){
     if(state === undefined){
         //최초 실행
-        return {name:"이름없음"}
+        var name_in_localStorage = window.localStorage.getItem('name');
+        if(name_in_localStorage){
+            return {name:name_in_localStorage}
+        }else{
+            return {name:undefined}
+        }
     }
     if(action.type === 'NAME'){
         return {...state, name:action.val}
