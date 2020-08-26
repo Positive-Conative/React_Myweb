@@ -20,4 +20,5 @@ db.once('open', function(){
     // CONNECTED TO MONGODB SERVER
     console.log("Connected to mongod server");
 });
-mongoose.connect('mongodb://localhost/save_userdata'); //db이름이구나!
+mongoose.connect('mongodb://192.168.99.100:27017/save_userdata', { useNewUrlParser: true }); //db이름이구나!
+//도커 연결 성공...!!!!
