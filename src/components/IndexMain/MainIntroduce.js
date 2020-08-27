@@ -112,7 +112,6 @@ class MainIntroduce extends React.Component {
                             }else{
                                 alert("무언가 문제가 발생한 듯 하다.")
                             }
-                            
                         }.bind(this)}>작성 완료
                     </Button>
                     <Button variant="secondary" onClick={handleClose}>

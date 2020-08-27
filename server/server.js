@@ -8,7 +8,7 @@ const route = require('./routes/index');
 // app.use(cors());
 
 app.use(bodyParser.json());
-app.use('/api', route); // app.use('/api', (req, res)=> res.json({username:'Conative'}));
+app.use('/', route); // app.use('/api', (req, res)=> res.json({username:'Conative'}));
 
 app.listen(port, ()=>{
     console.log(`express is running on ${port}`);

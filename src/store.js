@@ -15,6 +15,9 @@ export default createStore(function(state, action){
     if(action.type === 'NAME'){
         return {...state, name:action.val}
     }
+    if(action.type === 'getGuestbookData'){
+        return {...state, guestBookData:action.val}
+    }
     return state;
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
